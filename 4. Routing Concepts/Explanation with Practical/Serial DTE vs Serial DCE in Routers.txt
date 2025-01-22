@@ -1,0 +1,19 @@
+Serial DTE vs Serial DCE:
+
+1. Serial DTE (Data Terminal Equipment):
+
+DTE refers to the device that originates or terminates data transmissions. In the context of routers, a DTE device would be the router itself.
+When configuring a router's serial interface as a DTE, it means the router expects to connect to a DCE device using a serial cable.
+DTE devices do not supply clocking signals; instead, they rely on the clocking provided by the connected DCE device.
+
+2. Serial DCE (Data Communications Equipment):
+
+DCE refers to the device that establishes, maintains, and terminates a connection between data terminal equipment (DTE) devices. In the context of routers, a DCE device could be a CSU/DSU (Channel Service Unit/Data Service Unit).
+DCE devices provide the clocking signal for the serial connection. This clocking signal synchronizes the data transfer between the DTE and DCE devices.
+
+
+In a router-to-router connection:
+
+If one router's serial interface is configured as DTE, then the other router's serial interface must be configured as DCE.
+
+The DCE router typically sets the clock rate on the serial interface to establish the timing for data transmission.
